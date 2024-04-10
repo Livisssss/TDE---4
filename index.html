@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Perfil de Usuário</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Menu de inicio -->
+    <header class="bg-secondary text-white py-3">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-between"
+        >
+          <!-- Título -->
+          <a
+            href="#"
+            class="d-flex align-items-center text-white text-decoration-none"
+          >
+            <span class="fs-4">Cadastro de Usuário</span>
+          </a>
+
+          <!-- Menu de navegação -->
+          <ul class="nav d-flex flex-nowrap">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-white">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-white">Meu Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-white">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <img
+            src="./public/user.webp"
+            alt="Imagem de usuário"
+            class="img-fluid"
+          />
+          <div>
+            <p><strong>Nome:</strong> Cerebelow</p>
+            <p><strong>Banda favorita:</strong> Lynyrd Skynyrd</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Meu Perfil</div>
+            <div class="card-body">
+              <!-- Nome -->
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome"
+                  placeholder="Seu nome"
+                />
+              </div>
+              <!-- Banda favorita -->
+              <div class="mb-3">
+                <label for="banda" class="form-label">Banda Favorita</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="banda"
+                  placeholder="Sua banda favorita"
+                />
+              </div>
+              <!-- Música -->
+              <div class="mb-3">
+                <label for="musica" class="form-label">Música Favorita</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="musica"
+                  placeholder="Sua música favorita"
+                />
+              </div>
+
+              <!-- Música -->
+              <div class="mb-3">
+                <label for="show" class="form-label"
+                  >Show que gostaria de ir</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="show"
+                  placeholder="Um show dos sonhos"
+                />
+              </div>
+
+              <!-- Música -->
+              <div class="mb-3">
+                <label for="estilo" class="form-label"
+                  >Estilo musical favorito</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="estilo"
+                  placeholder="Seu estilo musical favorito"
+                />
+              </div>
+
+              <button type="submit" class="btn">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-secondary text-white py-4 fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">
+              &copy; 2024 Bruno Simionato, Lívia Verlindo e Ricardo Dequi. Todos
+              os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
